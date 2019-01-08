@@ -1,0 +1,10 @@
+Run the commands `sort`, `wc` and `uniq` on the commands.js file. Explain how they work and what the output was.
+A: `sort`: running this command sorts the lines in the file by alphabetical order. It outputs the file with the lines in this order.
+
+   `wc`: Counts the number of new lines, words, byte counts, and file name, it then outputs this info.
+
+   `uniq`: this command sorts the lines in a file and then removes any duplicates. It will then output the file without those duplicates.
+
+Using the pipe (|) connect at least two commands and run it on commands.js. Explain what the output was and why the specific data was outputted.
+A: I connected `head commands.js | wc`. This output was the `wc` output of the first 10 lines of `commands.js`. This is because the output of
+   `head commands.js` was the input for `wc`.
